@@ -4,6 +4,7 @@ dataset$Global_active_power = as.numeric(as.character(dataset$Global_active_powe
 dataset$Sub_metering_1 = as.numeric(as.character(dataset$Sub_metering_1))
 dataset$Sub_metering_2 = as.numeric(as.character(dataset$Sub_metering_2))
 dataset$Sub_metering_3 = as.numeric(as.character(dataset$Sub_metering_3))
+
 dataset$Date <- as.Date(dataset$Date, "%d/%m/%Y")
 dataset$weekdays <- weekdays(dataset$Date)
 datasubset <- subset(dataset, dataset$Date >= "2007-02-01" & dataset$Date <= "2007-02-02")
